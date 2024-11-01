@@ -26,7 +26,7 @@ function TextToSpeech() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center animated-gradient-bg p-6">
+        <div className="animated-gradient-bg min-h-screen flex flex-col items-center justify-center p-6">
             <div className="bg-white shadow-xl rounded-3xl p-10 max-w-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
                 <h1 className="text-4xl font-extrabold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">
                     Text to Speech Converter
