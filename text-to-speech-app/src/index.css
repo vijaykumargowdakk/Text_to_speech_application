@@ -1,13 +1,31 @@
 /* src/index.css */
-
-/* Tailwind CSS directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Gradient animation */
+html, body, #root, .animated-gradient-bg {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.animated-gradient-bg {
+    background: linear-gradient(270deg, #ec4899, #8b5cf6, #6366f1, #f472b6);
+    background-size: 600% 600%;
+    animation: gradient-animation 10s ease infinite;
+    min-height: 100vh; /* Ensures full height */
+}
+
+/* Keyframes for animated background */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 /* Existing custom styles */
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
